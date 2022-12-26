@@ -1,0 +1,125 @@
+.background{
+    background-image: radial-gradient(farthest-side at 50% 55%,#F9F3EE, #F9F3EE, #F9CEEE);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 10px;
+    //margin-top: 96px;  
+}
+.show-result{
+    margin: 100px;
+    margin-top: 104px;  //150
+    //margin-bottom: 146px;
+}
+span{
+    margin-top: 10px;
+}
+.logout-btn{
+    color: #7858A6;
+    border: 2px double #7858A6; 
+}
+.logout-btn:hover{
+    background-color: #ccc;
+}
+.table-header{
+    color: #363062;
+    font-size: 25px;
+    font-weight: bold;
+}
+table{
+    width: 100%;  
+    border-collapse: collapse;
+}
+.scroll{
+    overflow-y: scroll;
+    //width: 200px;
+    height: 300px;
+}
+td{
+    border-radius: 8px;
+}
+th{
+    border: 2px solid #F9F3EE;
+    border-radius: 8px; 
+}
+td:hover{
+    opacity: 0.8;
+}
+thead{
+    height: 80px;
+    background-color: #7858A6;
+    color: #F9F3EE;
+}
+td,th{
+    width: 20%;
+    height: 50px;
+    text-align: center;
+}
+td{
+    color: #4C3575;
+    font-weight: bold;
+}
+tr:nth-child(odd){
+     background-color: #F9F3EE;
+}
+tr:nth-child(even){
+    background-color: #cccccc;
+}
+
+.row{
+    display: flex;
+    flex-flow: row wrap;    
+}
+
+.col-left{
+    flex: 50%;
+    text-align: left;
+}
+.col-right{
+    flex: 50%;
+    text-align: right;
+}
+.center{
+    justify-content: center;
+}
+
+.btn{
+    display: inline-block;
+    background-color: #4C3575;
+    border-radius: 10px;
+    border: 4px double #cccccc;
+    color: #F9F3EE;
+    text-align: center;
+    font-size: 25px;
+    padding: 5px;
+    width: 180px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+.btn:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+  }
+.btn:hover {
+   background-color: #7858A6;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+  }
+  
+  .pagination a.active {
+    background-color: #7858A6;
+    color: white;
+  }
+  
+  .pagination a:hover:not(.active) {background-color: #ddd;}

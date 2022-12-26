@@ -1,0 +1,114 @@
+.background {
+    background-image: radial-gradient(farthest-side at 50% 55%, #F9F3EE, #F9F3EE, #F9CEEE);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 10px;
+}
+
+.logout-btn {
+    color: #7858A6;
+    border: 2px double #7858A6;
+}
+
+.logout-btn:hover {
+    background-color: #ccc;
+}
+
+span {
+    margin-top: 10px;
+}
+
+.search-result {
+    margin: 110px;
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.col {
+    flex: 50%;
+    text-align: center;
+}
+
+.search-form {
+    margin: 3px;
+}
+
+.start {
+    justify-content: start;
+}
+
+.center {
+    justify-content: center;
+}
+
+.end {
+    justify-content: end;
+}
+
+.form-header {
+    color: #363062;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px; //new
+}
+
+.label {
+    font-size: 20px;
+    font-weight: bold;
+    color: #363062;
+}
+
+input[type=text],
+input[type=number],
+select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    border-radius: 4px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+input[type=text]:focus {
+    border: 3px solid #7858A6;
+}
+
+input[type=number]:focus {
+    border: 3px solid #7858A6;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #4C3575;
+    border-radius: 10px;
+    border: 4px double #cccccc;
+    color: #F9F3EE;
+    text-align: center;
+    font-size: 25px;
+    padding: 5px;
+    width: 120px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.btn:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    background-color: #7858A6;
+}

@@ -1,0 +1,40 @@
+<div class="background">
+    <div class="nav">
+        <button mat-icon-button class='logout-btn' color="primary" title="logout" name="delete" (click)="logout()">
+            <mat-icon>exit_to_app</mat-icon>
+        </button><span>Logout</span>
+    </div>
+    <div class="show-result">
+        <div class="row start">
+            <button type="button" value="Back" class="btn" (click)="back()">Back</button>
+        </div>
+        <div class="row center">
+            <table>
+                <thead>
+                    <th colspan="2">RESULT</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Roll No.</th>
+                        <td>{{student.rollno}}</td>
+                    </tr>
+                    <tr>
+                        <th>Name</th>
+                        <td>{{student.name}}</td>
+                    </tr>
+                    <tr>
+                        <th>Date Of Birth</th>
+                        <td>{{student.dob}}</td>
+                    </tr>
+                    <tr>
+                        <th>Score</th>
+                        <td>{{student.score}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+</div>
+
+<router-outlet></router-outlet>

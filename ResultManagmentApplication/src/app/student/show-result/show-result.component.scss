@@ -1,0 +1,124 @@
+.background {
+    background-image: radial-gradient(farthest-side at 50% 55%, #F9F3EE, #F9F3EE, #F9CEEE);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 10px;
+}
+
+.show-result {
+    margin: 110px;
+}
+
+.logout-btn {
+    color: #7858A6;
+    border: 2px double #7858A6;
+}
+
+.logout-btn:hover {
+    background-color: #ccc;
+}
+
+span {
+    margin-top: 10px;
+}
+
+.table-header {
+    color: #363062;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+}
+
+td {
+    border-radius: 8px;
+}
+
+th {
+    border: 2px solid #F9F3EE;
+    border-radius: 8px;
+}
+
+td:hover {
+    opacity: 0.8;
+}
+
+thead {
+    height: 80px;
+    background-color: #7858A6;
+    color: #F9F3EE;
+}
+
+td,
+th {
+    width: 20%;
+    height: 50px;
+    text-align: center;
+}
+
+td {
+    color: #4C3575;
+    font-weight: bold;
+}
+
+tr:nth-child(odd) {
+    background-color: #f9dbf1;
+}
+
+tr:nth-child(even) {
+    background-color: #cccccc;
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.col {
+    flex: 50%;
+    text-align: center;
+}
+
+.start {
+    justify-content: start;
+}
+
+.center {
+    justify-content: center;
+}
+
+.end {
+    justify-content: end;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #4C3575;
+    border-radius: 10px;
+    border: 4px double #cccccc;
+    color: #F9F3EE;
+    text-align: center;
+    font-size: 25px;
+    padding: 5px;
+    width: 120px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.btn:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    background-color: #7858A6;
+}

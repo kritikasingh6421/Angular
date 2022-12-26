@@ -1,0 +1,46 @@
+{
+  "result": [
+    {
+      "rollno": 1,
+      "name": "Kritika Singh",
+      "dob": "06-04-2001",
+      "score": 85,
+      "id": 1
+    },
+    {
+      "rollno": 2,
+      "name": "Ritika Chandel",
+      "dob": "27-07-2000",
+      "score": 85,
+      "id": 2
+    },
+    {
+      "rollno": 3,
+      "name": "Samreen Azim",
+      "dob": "03-21-2001",
+      "score": 87,
+      "id": 3
+    },
+    {
+      "rollno": 4,
+      "name": "Tanya Srivastava",
+      "dob": "31-12-2000",
+      "score": 67,
+      "id": 4
+    },
+    {
+      "rollno": 5,
+      "name": "Shikha Mishra",
+      "dob": "15-12-2001",
+      "score": 78,
+      "id": 5
+    },
+    {
+      "rollno": 7,
+      "name": "Shikha Mishra",
+      "dob": "15-12-2001",
+      "score": 99,
+      "id": 7
+    }
+  ]
+}

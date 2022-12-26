@@ -1,0 +1,45 @@
+<div class="background">
+    <div class="nav">
+        <button mat-icon-button class='logout-btn' color="primary" title="logout" name="delete" (click)="logout()">
+            <mat-icon>exit_to_app</mat-icon>
+        </button><span> Logout </span>
+    </div>
+    <div class="search-result">
+        <div class="row start">
+            <button type="button" value="Back" class="btn" (click)="back()">Back</button>
+        </div>
+        <div *ngIf="alert==true" class="alert alert-warning alert-dismissible fade show" role="alert">
+            <p><strong>Warning!</strong> {{message}}</p>
+        </div>
+        <div class="row center form-header ">
+             <p>Find Result</p>
+        </div>
+        <div class="search-form">
+            <form #search="ngForm" (ngSubmit)="onSubmit(search.value);search.reset()">
+                <div class="row">
+                    <div class="col label ">
+                        <label for="roll-no">Roll Number</label>
+                    </div>
+                    <div class="col input-field">
+                        <input type="number" ngModel name="rollno" id="roll-no" placeholder="Roll Number" required>
+                    </div>
+                </div> 
+                <div class="row">
+                    <div class="col label">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="col input-field">
+                        <input type="text" ngModel name="name" id="name" placeholder="Name" required>
+                    </div>
+                </div>
+                <div class="row center">
+                    <input type="submit" value="Search" class="btn" >
+                    <input type="reset" value="Clear" class="btn">
+                </div>
+            </form>
+        </div>
+    </div> 
+</div>
+
+
+

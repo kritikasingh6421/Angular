@@ -1,0 +1,60 @@
+<div class="background">
+    <div class="nav">
+        <button mat-icon-button class='logout-btn' color="primary" title="logout" name="delete" (click)="logout()">
+            <mat-icon>exit_to_app</mat-icon>
+        </button><span>Logout</span>
+    </div>
+    <div class="show-result">
+        <div class="row ">
+            <div class="col-left table-header">
+                <p>Total Student: {{totalStudents}}</p>
+            </div>
+            <div class="col-right">
+                <a routerLink="add-result" routerLinkActive="active">
+                    <button type="button" value="Add Record" class="btn ">Add Record</button>
+                </a>
+            </div>
+        </div>
+        <div class="row center scroll"> <!---->
+            <table>
+                <thead>
+                        <th>Roll No.</th>
+                        <th>Name</th>
+                        <th>Date Of Birth</th>
+                        <th>Score</th>
+                        <th>Action</th>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let result of allResults">
+                            <td>{{result.rollno}}</td>
+                            <td>{{result.name}}</td>
+                            <td>{{result.dob}}</td>
+                            <td>{{result.score}}</td>
+                            <td>
+                                <a routerLink="update-result/{{result.rollno}}" routerLinkActive="active">
+                                    <button mat-icon-button color="primary" title="edit" name="edit">
+                                        <mat-icon>create</mat-icon>
+                                    </button>
+                                </a>
+                                <button mat-icon-button style="color:red;" color="primary" title="delete" name="delete" (click)="deleteResult(result.rollno)">
+                                    <mat-icon>delete_forever</mat-icon>
+                                </button>
+                            </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+        <!-- <div class="row center pagination">
+            <a href="#">&laquo;</a>
+            <a href="#">1</a>
+            <a class="active" href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo;</a>
+        </div> -->
+    </div>
+    
+</div>

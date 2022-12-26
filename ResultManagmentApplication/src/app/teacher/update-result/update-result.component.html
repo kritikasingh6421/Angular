@@ -1,0 +1,63 @@
+<div class="background">
+    <div class="nav">
+        <button mat-icon-button class='logout-btn' color="primary" title="logout" name="delete" (click)="logout()">
+            <mat-icon>exit_to_app</mat-icon>
+        </button><span>Logout</span>
+    </div>
+    <div class="add-result">
+        <div class="row start">
+            <button type="submit" value="Back" class="btn" (click)="back()">Back</button>
+        </div>
+        <div *ngIf="alert=='success'" class="alert success-warning alert-dismissible fade show" role="alert">
+            <strong>Success!</strong> Successfully updated the record.
+        </div>
+        <div *ngIf="alert=='warn'" class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong>Warning!</strong> Something went wrong.
+        </div>
+        <div class="row center form-header ">
+             <p>Edit New Result</p>
+        </div>
+        <div class="add-form">
+            <form #update="ngForm" (ngSubmit)="updateResult(update.value); update.reset()">
+                <div class="row">
+                    <div class="col label ">
+                        <label for="roll-no">Roll Number</label>
+                    </div>
+                    <div class="col input-field">
+                        <input type="number" name="rollno" id="rollno" 
+                            placeholder="Roll Number" [ngModel]="resultToUpdate.rollno" required>
+                    </div>
+                </div> 
+                <div class="row">
+                    <div class="col label">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="col input-field">
+                        <input type="text" [ngModel]="resultToUpdate.name" name="name" id="name"
+                            placeholder="Name" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col label" >
+                        <label for="dob">Date of Birth</label>
+                    </div>
+                    <div class="col input-field">
+                        <input type="text" [ngModel]="resultToUpdate.dob" name="dob" id="dob" placeholder="DOB" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col label">
+                        <label for="score">Score</label>
+                    </div>
+                    <div class="col input-field">
+                        <input type="number" [ngModel]="resultToUpdate.score" name="score" id="score" placeholder="Score" required>
+                    </div>
+                </div>
+                <div class="row center">
+                    <input type="submit" value="Submit" class="btn">
+                    <input type="reset" value="Clear" class="btn">
+                </div>
+            </form>
+        </div>
+    </div> 
+</div>
